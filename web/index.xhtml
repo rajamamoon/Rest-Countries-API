@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src ="Script/javascript.js"></script> 
+       <h:outputStylesheet name="styles.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <title>Countries Of the World</title>
+    </h:head>
+    <h:body id="page1">
+    <ul>
+       <li><a class="active" href="#home">Home</a></li>
+       <li><h:link value="About" outcome="about" /></li>
+       <li><h:link value="Feedback" outcome="ContactUs" /></li>
+    </ul>
+      <u2>
+          <form  class="example" action="CountryServlet" style="margin:auto;max-width:300px">
+         <input  type="text" placeholder="Search A Country" name="search" required="search"></input>
+            <button id="button" > <i class="fa fa-search"></i></button>
+           </form>
+        </u2>
+           <br/>  
+           <br/>
+           
+          <div class="countrybox">
+        <h2>Current Country Information</h2>
+      <strong class="city">Name:</strong>
+    <br/>
+      <span class="area"> Area: </span>
+    <br/>
+      <span class="capital">Capital: </span>
+        <br/>
+       <span class="population">Population: </span>
+         <br/>
+           <span class="region">Region: </span>
+              <br/>
+          <span class="nativename">Native Name: </span>
+              <br/>
+                <span class="callingCodes">Calling Codes: </span>
+              <br/>
+              <span class="languages">Languages: </span>
+              <br/>
+              <span class="demonym">Demonym: </span>
+              <br/>
+                  <div id="flag-container">
+                 <img src="" alt=""/>
+              </div>
+    </div>
+     
+    </h:body>
+</html>
+

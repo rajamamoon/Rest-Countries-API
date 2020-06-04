@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+         <h:outputStylesheet name="styles.css"/>
+        <title>Contact US</title>
+    </h:head>
+    <body id="page2">
+         <ul>
+  <li><h:link value="Home" outcome="index" /></li>
+   <li><h:link value="About" outcome="about" /></li>
+  <li><a class="active" href="#Contact Us">Feedback</a></li>
+        </ul>
+         <div  class="imgcontainer">
+                 <img src="resources/contact.jpg" alt="" />
+              </div>
+        <div class="myDiv" >
+               <br></br>
+                  <br></br>
+                    <br></br>
+                  <br></br>
+          <h1>Contact US</h1>
+          <h2> Your feedback is extremely important to us. Telling us about your experience, good or bad, means that we can better understand what is important to you, 
+            what we are doing well and where there are areas where we need to make improvements.
+            Your feedback can help us to:
+            Ensure our services are sensitive to the needs of patients, carers and visitors.
+            Improve and enhance the hospital experience.
+            Improve planning and decision making, taking into account our aim to ensure fair and equal use of services.
+            Ensure we are open and transparent in all that we do.
+You can share your experiences with us in the following Form:</h2>
+            <br/>
+       </div>
+                <form  class="contactform" action="DatabaseServlet" method="post">  
+                    Name:<br/><input type="text" name="userName" required="userName"/><br/><br/>  
+                    Email ID:<br/><input type="email" name="userEmail" required="userEmail"/><br/><br/> 
+                    Response:<br/><textarea type="password" name="userresponse" rows="4" cols="50" required="userresponse"></textarea><br/><br/> 
+                    Country:<br/><input type="text" name="userCountry" required="userCountry"/><br/><br/>   
+                <input type="submit" value="Submit"/>  
+                </form>  
+    </body>
+</html>

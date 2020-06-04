@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+         <h:outputStylesheet name="styles.css"/>
+        <title>About Us</title>
+    </h:head>
+    <h:body id="page3">
+       <ul>
+  <li><h:link value="Home" outcome="index" /></li>
+    <li><a class="active" href="#about">About</a></li>
+   <li><h:link value="Feedback" outcome="ContactUs" /></li>
+        </ul>
+                   <div  class="aboutcontainer">
+                 <img src="resources/about.jpg" alt="" />
+              </div>
+                   <br></br>
+                  <br></br>
+                    <br></br>
+                  <br></br>
+                    <br></br>
+                    <div id="aboutdiv">
+                      <h:form> 
+                          <h:dataTable value="#{bean.info}" var="info"> 
+                 <h:column>
+                     <f:facet name="header">Information</f:facet> 
+                     #{info}
+               </h:column>   
+             </h:dataTable> 
+                 <h:dataTable value="#{bean.website}" var="web" > 
+                 <h:column>
+                     <f:facet name="header">Website</f:facet> 
+                     #{web}
+                 </h:column>   
+             </h:dataTable> 
+             <h:dataTable value="#{bean.email}" var="email" > 
+                 <h:column>
+                     <f:facet name="header">Email Us</f:facet> 
+                     #{email}
+                 </h:column>   
+             </h:dataTable> 
+        </h:form >
+        <h2>Address</h2>
+        <h2>Knowledge Park, Block 16 - Dubai</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.9536676056896!2d55.166524485444675!3d25.103429683939876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b6b695079cf%3A0x39837c77fd4e2851!2sMiddlesex%20University%20Dubai!5e0!3m2!1sar!2sae!4v1576425363638!5m2!1sar!2sae" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </h:body>
+</html>

@@ -1,0 +1,225 @@
+
+#page1{
+    background-color:#cccccc;
+   background-image: url("globe.jpg");
+ background-size: auto;
+  
+}
+#page2{
+    background-color:  #e0f2fc;
+    background-size: cover;
+}
+#page3{
+     background-color:#cccccc;
+   background-origin:  border-box; 
+ background-size: cover;
+ 
+}
+
+#page{
+    background-color: #bbb;
+    background-size: cover; 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;;
+}
+
+li {
+  float: left;
+   border-right: 1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gray;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: silver;
+   position:relative;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#page2 .myDiv {
+
+text-align: center;
+}
+about{
+    background-color: black;
+}
+#flag-container {
+  height: 200px;
+  background-color: transparent;
+  float: left;
+}
+#flag-container img {
+  display: inline-block;
+  width: 100%;
+  height: 40%;
+}
+
+.countrybox{
+    
+    text-align: left;
+    color: aliceblue;
+}
+.imgcontainer{
+ position: relative;
+ height: 100px;
+  background-color: transparent;
+}
+.imgcontainer img {
+  display: inline-block;
+  width: 100%;
+  height:190%;
+  border: black;
+  border-bottom-style:  solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+}
+.contactform{
+    text-align:  center;
+}
+.aboutcontainer{
+ position: relative;
+ height: 100px;
+  background-color: transparent;
+}
+.aboutcontainer img {
+  display: inline-block;
+  width: 100%;
+  height: 190%;
+  border: black;
+  border-bottom-style:  solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+}
+
+#aboutdiv{
+  font-size: large; 
+  text-align: left;
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+ 
+}
+
+#page3name{
+float:left;  
+    width:25%; 
+    height:280px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 90px;
+    background-color: #ffffff; 
+    border: 1px solid black;
+    opacity: 0.5; 
+    filter: alpha(opacity=50);
+}
+#page3name h2{
+    color: #4CAF50;
+    font-weight: bolder;
+    text-align: center;
+}
+#page3name p{
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+#page3geo{
+  float:left;  
+    border: 1px solid black;
+    width:25%; 
+    height:390px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: #ffffff; 
+    border: 1px solid black;
+    opacity: 0.5; 
+    filter: alpha(opacity=50);
+}
+#page3geo h2{
+    color: #4CAF50;
+    font-weight: bolder;
+    text-align: center;
+}
+#page3geo p{
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+#page3codes{
+  float:  right;  
+     border: 1px solid black;
+     width:25%;
+     padding: 20px;
+     height:280px; 
+     margin: 20px;
+     margin-right: 60px;
+     background-color: #ffffff; 
+     border: 1px solid black;
+     opacity: 0.5; 
+     filter: alpha(opacity=50);
+}
+#page3codes h2{
+    color: #4CAF50;
+    font-weight: bolder;
+    text-align: center;
+}
+#page3codes p{
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
